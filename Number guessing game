@@ -1,0 +1,12 @@
+from random import randint
+print("Guess a number between 1 and 10.")
+number_chosen=int(input())
+number_random=randint(1,10)
+while number_random!=number_chosen:
+    print("Guess again!")
+    if number_chosen<number_random:
+        print("The number is higher!")
+    else:
+        print("The number is lower!")
+    number_chosen=int(input())
+print("You guessed right!")
